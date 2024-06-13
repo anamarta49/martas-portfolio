@@ -2,7 +2,9 @@
   <div>
     <h2>Welcome</h2>
     <p>Do you want to get to know me?</p>
-    <button>I do!</button>
+    <button (click)="showMessage()">I do!</button>
+  
+    <h5 *ngIf="show" class="pt-5">Hooray!&nbsp;&nbsp;<small>Let's go...</small></h5>
   </div>
     
 </div>
