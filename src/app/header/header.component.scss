@@ -1,0 +1,64 @@
+@import '../../variables';
+
+/* header.component.scss */
+
+.navbar {
+  position: fixed; /* Fix it at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height;; /* Initial height */
+  background-color: rgba(255, 255, 255, 0.9); /* Light, semi-transparent background */
+  color: #333; /* Dark text color */
+  display: flex; /* Flex layout for alignment */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center items vertically */
+  padding: 0 50px; /* Padding around the content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: all 0.6s ease; /* Smooth transition for changes */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.navbar.scrolled {
+  background-color: #f8f9fa; /* Change to a solid light color */
+  height: 50px; /* Reduce height */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flex layout for horizontal links */
+  gap: 80px; /* Space between links */
+  font-family: $header-font-family;
+  padding-top: 13px;
+}
+
+.nav-links a {
+  color: #333; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+  color: $third-color; /* Change link color on hover */
+}
+
+.nav-links a:hover,
+.nav-links a.active-link {
+  color: $third-color; /* Change the color for the active link */
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  font-size: 4rem; /* Brand font size */
+  font-weight: lighter; /* Brand font weight */
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.scrolled .navbar-brand {
+  font-size: 1.5rem;
+}
+
+
+  

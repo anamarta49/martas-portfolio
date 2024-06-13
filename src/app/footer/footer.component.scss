@@ -1,0 +1,15 @@
+@import '../../variables';
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    opacity: 0.7;
+    width: 100%; /* Make sure it spans the full width */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  
