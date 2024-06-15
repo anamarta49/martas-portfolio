@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-
+  yearsOfExperience = (new Date().getFullYear()) - 2021;
 }
