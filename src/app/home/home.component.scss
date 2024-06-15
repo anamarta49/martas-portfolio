@@ -6,3 +6,50 @@
     background-repeat: no-repeat; /* Prevent repeating the image */
 }
 
+/* Define the keyframes for the typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Apply the typing effect to the text */
+.animate-hooray {
+    width: 30px;
+    overflow: hidden; /* Ensures the text is clipped */
+    white-space: nowrap; /* Keeps the text in a single line */
+    animation: typing 3.5s steps(40, end); /* Typing effect */
+    white-space: nowrap;
+    max-width: fit-content;
+    line-height: 1;
+}
+
+/* Keyframes for the dot animation */
+@keyframes dots {
+    0%, 20% {
+      content: ''; /* No dots */
+    }
+    40% {
+      content: '.'; /* One dot */
+    }
+    60% {
+      content: '..'; /* Two dots */
+    }
+    80%, 100% {
+      content: '...'; /* Three dots */
+    }
+}
+  
+  /* Apply the animation to the text */
+.loading-dots::after {
+    content: ''; /* Initial content */
+    animation: dots 1s steps(1, end) infinite; /* Animation settings */
+    display: inline-block; /* Keeps the text inline */
+}
+  
+
+/* Ensure the element starts hidden for animation */
+.hidden {
+    visibility: hidden;
+}
+
+
