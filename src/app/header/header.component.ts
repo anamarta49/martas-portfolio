@@ -1,13 +1,15 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { slideDownAnimation } from '../animations';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [RouterLink, CommonModule, RouterLinkActive],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
+  animations: [slideDownAnimation]
 })
 export class HeaderComponent {
   isScrolled = false;

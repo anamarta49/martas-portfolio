@@ -22,3 +22,12 @@ export const slideInAnimation = trigger('routeAnimations', [
    ]),
 
 ]);
+
+export const slideDownAnimation = trigger('slideDownAnimation', [
+    transition(':enter', [       
+        style({ position: 'absolute', width: "100vw"}),
+        style({ transform: 'translateY(-90%)'}), 
+        animate('1.5s cubic-bezier(.35, 0, .25, 1)', 
+        style({ transform: 'translateY(0%)'}))
+   ]),
+]);
