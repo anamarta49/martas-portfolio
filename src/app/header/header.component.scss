@@ -56,8 +56,12 @@
   cursor: pointer;
 }
 
-.scrolled .navbar-brand {
+.scrolled .navbar-brand, .scrolled .dev-small {
   font-size: 1.5rem;
+}
+
+.dev-small {
+  font-size: 35px;
 }
 
 
