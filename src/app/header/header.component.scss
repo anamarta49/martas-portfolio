@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   height: $header-height;; /* Initial height */
-  background-color: rgba(255, 255, 255, 0.9); /* Light, semi-transparent background */
+  background-color: rgba(255, 255, 255, 0.7); /* Light, semi-transparent background */
   color: #333; /* Dark text color */
   display: flex; /* Flex layout for alignment */
   justify-content: space-between; /* Space out items */
@@ -34,9 +34,12 @@
 }
 
 .nav-links a {
-  color: #333; /* Link color */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s; /* Smooth color transition */
+  color: #62435c !important; /* Link color */
+  &:hover {
+    color: #373232 !important;
+  }
+  text-decoration: none !important; /* Remove underline */
+  transition: color 0.3s !important; /* Smooth color transition */
 }
 
 .nav-links a:hover {
