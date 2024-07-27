@@ -28,28 +28,42 @@
 .nav-links {
   list-style: none; /* Remove bullet points */
   display: flex; /* Flex layout for horizontal links */
-  gap: 80px; /* Space between links */
+  gap: 50px; /* Space between links */
   font-family: $header-font-family;
-  padding-top: 13px;
+  margin-top: auto;
+  margin-bottom: auto;
+  li {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 .nav-links a {
-  color: #62435c !important; /* Link color */
-  &:hover {
-    color: #373232 !important;
-  }
-  text-decoration: none !important; /* Remove underline */
-  transition: color 0.3s !important; /* Smooth color transition */
-}
+  color: transparent; 
+  background: lighten($primary-color, 30%); 
+  text-shadow: 0.5px -0.5px 0.5px rgb(255, 255, 255, 0.2), -0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1);
 
-.nav-links a:hover {
-  color: $third-color; /* Change link color on hover */
+  -webkit-background-clip: text; 
+  background-clip: text;
+  
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, all 0.5s ease; /* Smooth color transition */
+  font-weight: 400;
+  font-size: 25px;
 }
 
 .nav-links a:hover,
 .nav-links a.active-link {
-  color: $third-color; /* Change the color for the active link */
-  text-decoration: underline;
+  color: transparent; 
+  background: $primary-color; 
+
+  text-shadow: 0px 1px 1px rgb(255, 255, 255, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  font-weight: 900;
+  font-size: 30px;
+  transition: all 0.5s ease;
+
 }
 
 .navbar-brand {
@@ -63,9 +77,20 @@
   font-size: 1.5rem;
 }
 
+.scrolled a {
+  transition: all 0.5s ease;
+  font-size: 15px;
+
+  &:hover, &.active-link {
+    font-size: 17px;
+  }
+}
+
 .dev-small {
   font-size: 35px;
 }
+
+
 
 
   

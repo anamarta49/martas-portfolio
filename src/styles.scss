@@ -17,9 +17,9 @@ body {
     /* Multi-layer gradient with angular transitions and radial gradient */
     background: 
         linear-gradient(135deg, $bg-primary-color, transparent 50%), /* Angular gradient layer */
-        linear-gradient(225deg, transparent 50%, $bg-secondary-color), /* Another angular gradient */
-        radial-gradient(circle at center, rgba($bg-accent-color, 0.3), transparent 70%), /* Radial gradient with transparency */
-        radial-gradient(circle at top left, rgba($bg-primary-color, 0.3), transparent 60%); /* Additional radial gradient */
+        linear-gradient(225deg, transparent 90%, $bg-secondary-color), /* Another angular gradient */
+        radial-gradient(circle at center, rgba($bg-accent-color, 0.9), transparent 90%), /* Radial gradient with transparency */
+        radial-gradient(circle at top left, rgba($bg-primary-color, 0.9), transparent 90%); /* Additional radial gradient */
 
     /* Optional: Add a semi-transparent overlay pattern */
     &::before {
@@ -55,9 +55,9 @@ body {
 }
 
 button {
-    background-color: $primary-color;
+    background-color: $third-color;
     border: none;
-    color: $bg-secondary-color;
+    color: $secondary-color;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -69,7 +69,7 @@ button {
     transition: background-color 0.3s ease;
   
     &:hover {
-      background-color: darken($primary-color, 10%);
+      background-color: darken($third-color, 10%);
     }
 }
 
@@ -85,19 +85,20 @@ button {
             box-shadow: none;
         }
     }
+    a {
+        text-decoration: none !important;
+        color: rgb(136, 136, 255) !important;
+        &:hover {
+            color: rgb(103, 103, 142) !important;
+        }
+    }
 }
 
 .white-bg {
     background-color: rgba(255, 255, 255, 0.44);
 }
 
-a {
-    text-decoration: none !important;
-    color: rgb(136, 136, 255) !important;
-    &:hover {
-        color: rgb(103, 103, 142) !important;
-    }
-}
+
 
 
 

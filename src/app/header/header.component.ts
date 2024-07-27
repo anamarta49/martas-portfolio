@@ -20,4 +20,8 @@ export class HeaderComponent {
     // Check the window's scroll position
     this.isScrolled = window.scrollY > 150;
   }
+
+  openCV() {
+    window.open('Marta_CV.pdf', '_blank');
+  }
 }
