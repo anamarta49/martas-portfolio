@@ -1,3 +1,6 @@
+@import "../variables";
+
+
 .wrapper {
     min-height: 100vh; /* Ensure wrapper takes full viewport height */
     width: 100vw;
@@ -13,4 +16,41 @@
 
 .content>* {
     display: block;
+}
+
+.code-button {
+    z-index: 1000;
+    position: fixed;
+    bottom: 60px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+
+    background-color: lighten($primary-color, 30%);
+
+    margin:30px;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.3);
+
+    a {            
+        color: white !important;
+    }
+
+    i {
+        transform: scale(1.5);
+        transition: all 1s ease;
+    }
+
+    transition: all 1s ease;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.5s ease;
+        box-shadow: -5px 10px 7px rgba(0, 0, 0, 0.2);
+        i {
+            filter:brightness(1.1);
+            transform: scale(1.8);
+            transition: all 0.5s ease;
+        }
+    }
 }

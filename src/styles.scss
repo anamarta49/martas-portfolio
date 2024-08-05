@@ -98,6 +98,21 @@ button {
     background-color: rgba(255, 255, 255, 0.44);
 }
 
+.p-tooltip {
+    background-color: rgba($third-color, 0.40);
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    transform: translateX(-128%) translateY(-100%);
+    font-family: $header-font-family;
+    font-size: small;
+
+    box-shadow: -5px 10px 7px rgba(0, 0, 0, 0.1);
+
+    backdrop-filter: blur(2px);
+    
+}
+
 
 
 

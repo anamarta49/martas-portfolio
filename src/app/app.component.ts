@@ -3,12 +3,13 @@ import { ChildrenOutletContexts, RouterOutlet } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { slideInAnimation } from './animations';
+import { TooltipModule } from 'primeng/tooltip';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, TooltipModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   animations: [
