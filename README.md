@@ -1,5 +1,7 @@
 # MartasPortfolio
 
+served on -> https://martasportfolio.netlify.app
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
 
 ## Development server
